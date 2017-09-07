@@ -14,20 +14,6 @@ Reduces the apk size.
 Easy to transform color of the image through hex code.
 
 
-Put the MultiColorIconView in the layout xml
-
-```
-<com.sutanu.multiiconview.MultiColorIconView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        app:multiColorIconViewColor="#F4A8A8"
-        android:id="@+id/multi_color_icon_view"
-        app:viewAnimationDuration="1000"
-        app:animationType="fadeIn"
-        android:src="@drawable/image"/>
-```
-
 ### Add to project
 
 Add dependencies in your /app/build.gradle file
@@ -40,6 +26,19 @@ dependencies {
 ```
 
 ## Example
+
+Put the MultiColorIconView in the layout xml
+
+```
+<com.sutanu.multiiconview.MultiColorIconView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:multiColorIconViewColor="#F4A8A8"
+        android:id="@+id/multi_color_icon_view"
+        app:viewAnimationDuration="1000"
+        app:animationType="fadeIn"
+        android:src="@drawable/image"/>
+```
 
 ```
        MultiColorIconView multiColorIconView = (MultiColorIconView)findViewById(R.id.multi_color_icon_view);
