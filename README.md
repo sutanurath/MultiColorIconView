@@ -20,9 +20,7 @@ Easy to transform color of the image through hex code.
 Add dependencies in your /app/build.gradle file
 
 ```
-dependencies {
 	    compile 'com.sutanu.multiiconview:multiiconview:1.0.1'
-	}
 
 ```
 
