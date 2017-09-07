@@ -7,6 +7,7 @@ Changing colors of drawable icons by reusing the single icon with different colo
 ### Screenshots
 
 
+## Pros
 It increases the app performance by reusing the single icon.
 
 Reduces the apk size.
