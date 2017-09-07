@@ -8,11 +8,13 @@ Changing colors of drawable icons by reusing the single icon with different colo
 
 
 It increases the app performance by reusing the single icon.
+
 Reduces the apk size.
+
 Easy to transform color of the image through hex code.
 
 
-Put the BlurEffectView in the layout xml
+Put the MultiColorIconView in the layout xml
 
 ```
 <com.sutanu.multiiconview.MultiColorIconView
