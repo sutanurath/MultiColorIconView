@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MultiColorIconView">
+        <attr name="multiColorIconViewColor" format="color"/>
+        <attr name="viewAnimationDuration" format="integer"/>
+        <attr name="animationType"/>
+    </declare-styleable>
+
+    <attr name="animationType" format="enum">
+        <enum name="none" value="0" />
+        <enum name="fadeIn" value="1" />
+        <enum name="fadeOut" value="2" />
+        <enum name="rotate" value="3" />
+        <enum name="scale" value="4" />
+
+    </attr>
+</resources>
