@@ -20,7 +20,7 @@ Easy to transform color of the image through hex code.
 Add dependencies in your /app/build.gradle file
 
 ```
-	    compile 'com.sutanu.multiiconview:multiiconview:1.0.1'
+      compile 'com.sutanu.multiiconview:multiiconview:1.0.1'
 
 ```
 
@@ -29,7 +29,7 @@ Add dependencies in your /app/build.gradle file
 Put the MultiColorIconView in the layout xml
 
 ```
-<com.sutanu.multiiconview.MultiColorIconView
+       <com.sutanu.multiiconview.MultiColorIconView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:multiColorIconViewColor="#F4A8A8"
