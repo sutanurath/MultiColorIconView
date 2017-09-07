@@ -53,7 +53,7 @@ Put the MultiColorIconView in the layout xml
 
 If it doesn't work, please send me a email, sutanurath@gmail.com
 
-Please contribute if you have somthing.
+Please contribute if you have something.
 
 ### Limitations
 
