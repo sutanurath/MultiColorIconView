@@ -7,7 +7,7 @@ Changing colors of drawable icons by reusing the single icon with different colo
 ### Screenshots
 
 
-## Features
+## Pros
 It increases the app performance by reusing the single icon.
 
 Reduces the apk size.
@@ -52,8 +52,6 @@ Put the MultiColorIconView in the layout xml
 
 
 If it doesn't work, please send me a email, sutanurath@gmail.com
-
-Please contribute.
 
 ### Limitations
 
