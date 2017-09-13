@@ -6,7 +6,7 @@ Changing colors of drawable icons by reusing the single icon with different colo
 
 ### Screenshots
 
-![Alt text](https://github.com/sutanurath/MultiColorIconView/blob/master/image.gif" MultiColorIconView")
+![Alt text](https://github.com/sutanurath/MultiColorIconView/blob/master/image.gif "MultiColorIconView")
 
 ## Pros
 It increases the app performance by reusing the single icon.
