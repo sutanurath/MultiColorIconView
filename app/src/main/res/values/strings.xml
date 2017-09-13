@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">MultiIconViewDemo</string>
+    <string name="app_name">MultiColorIconViewDemo</string>
+
+    <string-array name="color1">
+        <item>#f9a825</item>
+        <item>#1b5e20</item>
+        <item>#689f38</item>
+        <item>#03a9f4</item>
+        <item>#880e4f</item>
+        <item>#ce93d8</item>
+
+    </string-array>
+
+    <string-array name="animation">
+        <item>NONE</item>
+        <item>FADE_IN</item>
+        <item>FADE_OUT</item>
+        <item>ROTATE</item>
+        <item>SCALE</item>
+    </string-array>
 </resources>

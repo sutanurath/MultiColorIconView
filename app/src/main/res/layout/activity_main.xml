@@ -3,17 +3,48 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.multiiconviewdemo.MainActivity">
+    android:layout_height="match_parent">
+
+    <com.sutanu.blureffectview.BlurEffectView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:blurEffectViewRadius="3dp"
+        android:layout_centerInParent="true"
+        app:blurEffectViewOverlayColor="#80C4A8A8" />
 
     <com.sutanu.multiiconview.MultiColorIconView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         app:multiColorIconViewColor="#F4A8A8"
         android:id="@+id/multi_color_icon_view"
-        app:viewAnimationDuration="10000"
-        app:animationType="fadeIn"
-        android:src="@drawable/image"/>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/img"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+
+        <Spinner
+            android:id="@+id/color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
 
 </RelativeLayout>

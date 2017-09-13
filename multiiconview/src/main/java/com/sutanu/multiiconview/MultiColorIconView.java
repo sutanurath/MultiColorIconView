@@ -9,6 +9,7 @@ import android.graphics.LightingColorFilter;
 import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
@@ -24,12 +25,12 @@ import android.widget.ImageView;
  * Created by sutanurath on 07/09/17.
  */
 
-public class MultiColorIconView extends ImageView {
+public class MultiColorIconView extends AppCompatImageView {
 
     private int mColor;
     private int mViewDuration;
     private int mViewAnimationType;
-    private Bitmap mFinalBitmap;
+    private Bitmap mBitmap;
 
     public static final int NONE = 0;
     public static final int FADE_IN = 1;
@@ -61,9 +62,9 @@ public class MultiColorIconView extends ImageView {
             return;
         }
         Bitmap sourceBitmap = convertDrawableToBitmap(drawable);
-        mFinalBitmap = changeImageColor(sourceBitmap, mColor);
+        mBitmap = changeImageColor(sourceBitmap, mColor);
 
-        canvas.drawBitmap(mFinalBitmap, 0, 0, null);
+        canvas.drawBitmap(mBitmap, 0, 0, null);
 
     }
 
@@ -98,11 +99,6 @@ public class MultiColorIconView extends ImageView {
         Canvas canvas = new Canvas(resultBitmap);
         canvas.drawBitmap(resultBitmap, 0, 0, p);
         return resultBitmap;
-    }
-
-    private static Drawable covertBitmapToDrawable(Context context, Bitmap bitmap) {
-        Drawable d = new BitmapDrawable(context.getResources(), bitmap);
-        return d;
     }
 
     private static Bitmap convertDrawableToBitmap(Drawable drawable) {
@@ -166,7 +162,7 @@ public class MultiColorIconView extends ImageView {
                 break;
             case ROTATE:
 
-                RotateAnimation rotate = new RotateAnimation(180, 360, Animation.RELATIVE_TO_SELF,
+                RotateAnimation rotate = new RotateAnimation(0, 360, Animation.RELATIVE_TO_SELF,
                         0.5f,  Animation.RELATIVE_TO_SELF, 0.5f);
                 rotate.setDuration(duration);
                 this.setAnimation(rotate);
